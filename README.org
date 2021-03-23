@@ -1,0 +1,34 @@
+#+TITLE: ALGOZTOP
+#+OPTIONS: H:1 num:nil toc:nil \n:nil @:t ::t |:t ^:t f:t TeX:t
+
+Random algorithms & data structures tasks and solutions for practicing
+problem solving skills.
+
+* Structure
+
+Most problems have the same structure:
+
+#+BEGIN_EXAMPLE
+0001-easy-count-pairs-with-given-sum     <= name (number-easy/medium/hard-subject)
+├── buildit                              <= build script (CMake usually)
+├── CMakeLists.txt                       <= main CMake file
+├── hashset.c                            <= solution library c-file
+├── hashset-test.c                       <= solution main() with tests
+├── include
+│   └── hashset.h                        <= solution library h-file
+└── problem.txt                          <= problem text description
+
+1 directory, 6 files
+#+END_EXAMPLE
+
+* How to build
+
+Run ~buildit~ script for the appropriate problem.
+
+* Solutions
+
+| name                                 | date                  |
+|--------------------------------------+-----------------------|
+| [[0001-easy-count-pairs-with-given-sum/problem.txt][0001-easy-count-pairs-with-given-sum]] | \checkmark [[0001-easy-count-pairs-with-given-sum/hashset-test.c][2021-03-21]] |
+|--------------------------------------+-----------------------|
+
