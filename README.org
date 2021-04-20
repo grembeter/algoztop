@@ -10,7 +10,6 @@ Most problems have the same structure:
 
 #+BEGIN_EXAMPLE
 0001-easy-count-pairs-with-given-sum     <= name (number-easy/medium/hard-subject)
-├── buildit                              <= build script (CMake usually)
 ├── CMakeLists.txt                       <= main CMake file
 ├── hashset.c                            <= solution library c-file
 ├── hashset-test.c                       <= solution main() with tests
@@ -18,12 +17,12 @@ Most problems have the same structure:
 │   └── hashset.h                        <= solution library h-file
 └── problem.txt                          <= problem text description
 
-1 directory, 6 files
+1 directory, 5 files
 #+END_EXAMPLE
 
-* How to build
+* How to build and test
 
-Run ~buildit~ script for the appropriate problem.
+Run ~bakeit~ script for the appropriate problem, e.g.: ~./bakeit 3~
 
 * Solutions
 
