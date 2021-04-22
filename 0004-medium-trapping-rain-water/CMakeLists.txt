@@ -7,8 +7,9 @@ include("../common-problem.cmake")
 include_directories("include")
 
 add_library(${CMAKE_PROJECT_NAME}-1 STATIC "solution-1.c")
-add_executable(test-${CMAKE_PROJECT_NAME}-1 "test-solution-1.c")
-target_link_libraries(test-${CMAKE_PROJECT_NAME}-1 solution-1)
+# add_executable(test-${CMAKE_PROJECT_NAME}-1 "test-solution-1.c")
+add_executable(test-${CMAKE_PROJECT_NAME}-1 "tests/test-solution-1.c")
+target_link_libraries(test-${CMAKE_PROJECT_NAME}-1 check pthread m rt subunit solution-1)
 
 enable_testing()
 

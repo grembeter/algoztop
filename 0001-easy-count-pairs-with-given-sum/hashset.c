@@ -19,7 +19,7 @@ static size_t hash_key(struct hashset *hs, int key)
         key = -key;
     }
 
-    return ((size_t)key * kPRIME % hs->capacity);
+    return (((size_t)key * kPRIME) % hs->capacity);
 }
 
 static struct hashset *hash_alloc(size_t capacity)
